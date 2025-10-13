@@ -2,49 +2,105 @@
 /* This file makes the site look good on phones and small screens */
 
 @media (max-width: 768px) {
-  /* Make header text smaller on small screens */
-  header h1 {
-    font-size: 1.5rem;
-  }
+    /* Make header text smaller on small screens */
 
-  header p {
-    font-size: 1rem;
-  }
+    header .container {
+        display: block;
+        text-align: center;
+    }
 
-  /* Stack navigation links vertically */
-  nav ul li {
-    display: block;
-    margin: 8px 0;
-  }
+    header h1 {
+        font-size: 1.5rem;
+    }
 
-  /* Make hero image smaller */
-  .profile-img {
-    width: 120px;
-    height: 120px;
-  }
+    header p {
+        font-size: 1rem;
+    }
 
-  /* Reduce padding for hero section */
-  #hero {
-    padding: 2rem 0;
-  }
+    /* Stack navigation links vertically */
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
 
-  /* Stack project items instead of side-by-side */
-  .project {
-    flex-direction: column;
-    align-items: center;
-  }
+    /* Show burger, hide normal nav */
+    #burger {
+        display: flex;
+    }
 
-  .project img {
-    width: 100%;
-  }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
 
-  .project-details {
-    padding: 1rem;
-    text-align: center;
-  }
+    /* Start with nav off-screen */
+    #nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 70%;
+        background-color: #222;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+    }
 
-  /* Footer text smaller on mobile */
-  footer p {
-    font-size: 0.9rem;
-  }
+    /* When open, slide into view */
+    #nav-menu.open {
+        transform: translateX(0);
+    }
+
+    /* Center the nav links vertically */
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 30px;
+    }
+
+    /* Make sure nav links look nice on mobile */
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    /* Move name and title under the burger (centered) */
+    .header-info {
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Make hero image smaller */
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Reduce padding for hero section */
+    #hero {
+        padding: 2rem 0;
+    }
+
+    /* Stack project items instead of side-by-side */
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    .project-details {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* Footer text smaller on mobile */
+    footer p {
+        font-size: 0.9rem;
+    }
 }
