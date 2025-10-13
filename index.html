@@ -8,6 +8,7 @@
 
     <!-- Connect CSS Styles file -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mob-style.css" />
 
     <!-- Small icon for browser tab (Favicon) -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
@@ -17,24 +18,26 @@
     <!-- Header with my name and navigation links -->
     <header>
         <div class="container">
-            <h1>Sorin R</h1>
-            <p>Front-End Web Developer</p>
-
-            <!-- Site navigation -->
-            <nav>
+            <div class="header-info">
+                <h1>Sorin R</h1>
+                <p>Front-End Web Developer</p>
+            </div>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <!-- Burger button (shows on mobile) -->
+            <button id="burger" aria-label="Toggle menu">☰</button>
         </div>
     </header>
 
     <!-- Intro section with my photo and short description -->
     <section id="hero">
         <div class="container">
-            <img src="images/profile.jpg" alt="Photo of Sorin R" class="profile-img" />
+            <img src="img/profile.jpg" alt="Photo of Sorin R" class="profile-img" />
             <h2>Hello, I'm Sorin 👋</h2>
             <p>I build responsive websites using HTML, CSS, and JavaScript.</p>
         </div>
@@ -90,7 +93,7 @@
     <!-- Footer with contact info and social links -->
     <footer>
         <div class="container">
-            <p>© 2025 Sorin R | <a href="mailto:sorin@example.com">sorin@example.com</a></p> 
+            <p>© 2025 Sorin R | <a href="mailto:sorin@example.com">sorin@example.com</a></p>
             <ul class="social-links">
                 <li><a href="https://github.com/sorin-r" target="_blank">GitHub</a></li>
                 <li><a href="https://linkedin.com/in/sorin-r" target="_blank">LinkedIn</a></li>
