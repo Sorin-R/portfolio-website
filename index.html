@@ -1,31 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorin R | Portfolio</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Small icon for browser tab (Favicon) -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
+
 <body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <!-- Header with my name and navigation links -->
+    <header>
+        <div class="container">
+            <h1>Sorin R</h1>
+            <p>Front-End Web Developer</p>
 
-  <main>
-    <h2>Hello, I’m Sorin!</h2>
-    <p>This is a preview of my personal portfolio website.</p>
-  </main>
+            <!-- Site navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <footer>
-    <p>© 2025 Sorin Developer</p>
-    <p>Last updated: October 13, 2025</p>
-  </footer>
+    <!-- Intro section with my photo and short description -->
+    <section id="hero">
+        <div class="container">
+            <img src="images/profile.jpg" alt="Photo of Sorin R" class="profile-img" />
+            <h2>Hello, I'm Sorin 👋</h2>
+            <p>I build responsive websites using HTML, CSS, and JavaScript.</p>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Main section showing my featured projects -->
+    <main>
+        <section id="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <p>Here are some projects I’ve built recently:</p>
+
+                <!-- Project 1 -->
+                <article class="project">
+                    <img src="images/project1.jpg" alt="Screenshot of Weather Dashboard" />
+                    <div class="project-details">
+                        <h3>Weather Dashboard</h3>
+                        <p>This app shows live weather data for any city using the OpenWeather API.</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, API</p>
+                        <a href="https://github.com/sorin-r/weather-dashboard" target="_blank">View Code</a>
+                        <a href="#" class="btn">Live Demo</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project">
+                    <img src="images/project2.jpg" alt="Screenshot of Portfolio Website" />
+                    <div class="project-details">
+                        <h3>Portfolio Website</h3>
+                        <p>This website — my personal portfolio built from scratch.</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                        <a href="https://github.com/sorin-r/portfolio-website" target="_blank">View Code</a>
+                        <a href="https://sorin-r.github.io/portfolio-website/" class="btn">Live Demo</a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project">
+                    <img src="images/project3.jpg" alt="Screenshot of Task Tracker" />
+                    <div class="project-details">
+                        <h3>Task Tracker</h3>
+                        <p>A simple to-do list app where users can add, edit, and remove tasks. It saves data in local
+                            storage.</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                        <a href="https://github.com/sorin-r/task-tracker" target="_blank">View Code</a>
+                        <a href="#" class="btn">Live Demo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with contact info and social links -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Sorin R | <a href="mailto:sorin@example.com">sorin@example.com</a></p>
+            <ul class="social-links">
+                <li><a href="https://github.com/sorin-r" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/sorin-r" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
 </body>
+
 </html>
