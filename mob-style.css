@@ -99,6 +99,12 @@
         text-align: center;
     }
 
+    /*Contact form width on mobile */
+    form {
+        width: auto;
+        margin: 2rem 1rem;
+    }
+
     /* Footer text smaller on mobile */
     footer p {
         font-size: 0.9rem;
