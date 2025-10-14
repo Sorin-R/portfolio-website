@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorin R | Responsive Websites | HTML, CSS, & JavaScript</title>
+
+    <!-- Connect CSS Styles file -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mob-style.css" />
+
+    <!-- Small icon for browser tab (Favicon) -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+    <!-- Header with my name and navigation links -->
+    <header>
+        <div class="container">
+            <div class="header-info">
+                <a href="/">Sorin R</a>
+                <p>Front-End Web Developer</p>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Burger button (shows on mobile) -->
+            <button id="burger" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Main section showing my contacts and the contact form -->
+    <main>
+        <section id="contact">
+            <div class="container">
+                <h1>Contact Your Next Web Developer</h1>
+                <p>If you'd like to get in touch, please fill out the form below or email me directly at
+                    <a href="mailto: info@rotarusorin.com">info@rotarusorin.com</a>.
+                </p>
+            </div>
+            <div id="form">
+                <form method="POST">
+                    <h2>Contact Us</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with contact info and social links -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Sorin R | <a href="mailto:info@rotarusorin.com.com">info@rotarusorin.com</a></p>
+            <ul class="social-links">
+                <li><a href="https://github.com/sorin-r" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/sorin-r" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
