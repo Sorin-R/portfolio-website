@@ -55,6 +55,12 @@ header p {
     color: #ccc;
 }
 
+.header-info a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
 /* Navigation menu inside the header */
 nav ul {
     list-style: none;
@@ -75,7 +81,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    text-decoration: underline;
+    color: #62a1e0;
 }
 
 /* Burger button — hidden on desktop */
@@ -194,6 +200,89 @@ nav ul li a.active {
 
 .project-details a:hover {
     background-color: #555;
+}
+
+/* Contact section */
+#contact {
+    margin-top: 1.5rem;
+}
+
+#contact a {
+    color: #62a1e0;
+    text-decoration: none;
+}
+
+main .container {
+    margin-bottom: 2rem;
+}
+
+#form {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+form {
+    background: #222;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    width: auto;
+    margin-bottom: 1.5rem;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: #f9fafb;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #62a1e0;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    background: #fff;
+}
+
+form button {
+    width: 100%;
+    padding: 0.85rem;
+    background: #62a1e0;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.15s ease;
+}
+
+form button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+form button:active {
+    transform: translateY(0);
 }
 
 /* Footer section at the bottom */
