@@ -1,3 +1,13 @@
+//Fixed Header Scroll Effect.
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
 // Select burger and nav elements
 const burger = document.getElementById('burger');
 const navMenu = document.getElementById('nav-menu');
@@ -58,3 +68,21 @@ if (profileImg) {
         profileImg.classList.toggle('active');
     });
 }
+
+// Scroll To Top Button Functionality.
+const scrollBtn = document.getElementById('scrollTop');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollBtn.classList.add('show');
+  } else {
+    scrollBtn.classList.remove('show');
+  }
+});
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});

@@ -13,18 +13,19 @@ body {
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
+    padding-top: 115px; /* Space for fixed header */
 }
 
 /* Toggle dark mode styles */
 body.dark {
-    background-color: #000;
+    background-color: #333;
     color: #eee;
 }
 
 body.dark #hero {
     background-color: #444;
     color: #ffffff;
-} 
+}
 
 body.dark #hero p {
     color: #ddd;
@@ -38,7 +39,7 @@ body.dark h3 {
     color: #eee;
 }
 
-body.dark #projects p{
+body.dark #projects p {
     color: #eee;
 }
 
@@ -63,7 +64,6 @@ body.dark .project {
 
 body.dark a {
     color: #eee;
-
 }
 
 #mode-toggle {
@@ -97,9 +97,21 @@ a {
 
 /* Header section styling */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #222;
     color: #fff;
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(34, 34, 34, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
 }
 
 header h1 {
@@ -423,6 +435,56 @@ form button:hover {
 
 form button:active {
     transform: translateY(0);
+}
+
+/* Scroll-to-top button s*/
+#scrollTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px; /* Equal width & height make it a perfect circle */
+    height: 60px;
+    background: #62a1e0;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* Perfect circle */
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    z-index: 2000;
+    display: flex; /* Center the arrow perfectly */
+    align-items: center;
+    justify-content: center;
+}
+
+#scrollTop.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#scrollTop:hover {
+    background: #1d4ed8;
+    transform: scale(1.1); /* Subtle hover grow */
+}
+
+/* Arrow inside the button */
+.arrow {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+}
+
+#scrollTop.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#scrollTop:hover {
+    background: #1d4ed8;
 }
 
 /* Footer section at the bottom */
