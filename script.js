@@ -23,3 +23,38 @@ navLinks.forEach(link => {
         burger.textContent = '☰'; // back to burger
     });
 });
+
+// Dark mode toggle button.
+const modeToggle = document.getElementById('mode-toggle');
+
+if (modeToggle) {
+    // Check saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark');
+        modeToggle.textContent = '☀️ Light Mode';
+    }
+
+    // Toggle dark/light mode
+    modeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        const darkModeOn = document.body.classList.contains('dark');
+
+        if (darkModeOn) {
+            modeToggle.textContent = '☀️ Light Mode';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            modeToggle.textContent = '🌙 Dark Mode';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+} else {
+    console.warn('Dark mode toggle button (#mode-toggle) not found in HTML.');
+}
+
+/* Add a subtle animation when the profile image is clicked */
+const profileImg = document.querySelector('.profile-img');
+if (profileImg) {
+    profileImg.addEventListener('click', () => {
+        profileImg.classList.toggle('active');
+    });
+}

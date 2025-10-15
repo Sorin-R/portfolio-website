@@ -15,6 +15,73 @@ body {
     line-height: 1.6;
 }
 
+/* Toggle dark mode styles */
+body.dark {
+    background-color: #000;
+    color: #eee;
+}
+
+body.dark #hero {
+    background-color: #444;
+    color: #ffffff;
+} 
+
+body.dark #hero p {
+    color: #ddd;
+}
+
+body.dark .profile-img {
+    border: 3px solid #eee;
+}
+
+body.dark h3 {
+    color: #eee;
+}
+
+body.dark #projects p{
+    color: #eee;
+}
+
+body.dark .about-text h1 {
+    color: #eee;
+}
+
+body.dark header,
+body.dark footer {
+    background-color: #222;
+}
+
+body.dark #projects {
+    background-color: #333;
+    color: #eee;
+}
+
+body.dark .project {
+    background-color: #0f0f0f;
+    color: #eee;
+}
+
+body.dark a {
+    color: #eee;
+
+}
+
+#mode-toggle {
+    margin-left: 1rem;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+#mode-toggle:hover {
+    background: #555;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -124,6 +191,14 @@ nav ul li a.active {
     border: 3px solid #222;
 }
 
+/* Add a subtle animation when the profile image is clicked */
+.profile-img.active {
+    transform: scale(1.1);
+    border: 3px solid #62a1e0;
+    box-shadow: 0 0 15px #62a1e0;
+    transition: all 0.3s ease;
+}
+
 #hero h2 {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
@@ -208,7 +283,6 @@ nav ul li a.active {
     justify-content: center;
     align-items: center;
     padding: 5rem 2rem;
-    background: #fff;
     height: 100vh;
 }
 
@@ -247,8 +321,8 @@ nav ul li a.active {
     font-size: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border: none;
-    cursor: pointer; 
-    width: 100%;   
+    cursor: pointer;
+    width: 100%;
     max-width: 200px;
     text-align: center;
 }
