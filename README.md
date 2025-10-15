@@ -34,26 +34,6 @@ Deployed automatically with **GitHub Pages** 🚀
 | **JavaScript (ES6)** | Interactive components and animations |
 | **GitHub Pages**     | Hosting and continuous deployment     |
 
----
-
-## 📂 Folder Structure
-
-portfolio-website/
-│
-├── index.html
-├── about.html
-├── contact.html
-├── style.css
-├── mob-style.css
-├── script.js
-├── images/
-│ ├── profile.jpg
-│ ├── terraconnect-image.jpg
-│ ├── gbone.jpg
-│ └── robot.jpg
-└── README.md
-
----
 
 ## 🧑‍💻 Author
 
@@ -61,7 +41,7 @@ portfolio-website/
 Front-End Web Developer
 
 -   🌐 [Portfolio Website](https://sorin-r.github.io/portfolio-website/)
--   💼 [LinkedIn](https://linkedin.com/in/sorin-r)
+-   💼 [LinkedIn](https://www.linkedin.com/in/sorin-rotaru-terraconnect/)
 -   🐙 [GitHub](https://github.com/sorin-r)
 -   ✉️ [Email](mailto:info@rotarusorin.com)
 
