@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorin R | Responsive Websites | HTML, CSS, & JavaScript</title>
+
+    <!-- Connect CSS Styles file -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mob-style.css" />
+
+    <!-- Small icon for browser tab (Favicon) -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+    <!-- Header with my name and navigation links -->
+    <header>
+        <div class="container">
+            <div class="header-info">
+                <a href="https://sorin-r.github.io/portfolio-website/">Sorin R</a>
+                <p>Front-End Web Developer</p>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="https://sorin-r.github.io/portfolio-website/">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Burger button (shows on mobile) -->
+            <button id="burger" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Main section showing informations about me-->
+    <main>
+        <!-- About Section -->
+        <section class="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <p>
+                        Hi, I’m <strong>Sorin R</strong> — a passionate <strong>Front-End Web Developer</strong> who
+                        loves creating clean, responsive, and user-friendly websites.
+                        I specialize in <strong>HTML, CSS, and JavaScript</strong>, focusing on accessibility and
+                        performance.
+                    </p>
+                    <p>
+                        My goal is to build engaging digital experiences that combine design and functionality. I enjoy
+                        transforming ideas into interactive, well-structured web applications.
+                    </p>
+                    <p>
+                        When I’m not coding, you’ll find me exploring new technologies, refining my design skills, or
+                        learning about UI/UX best practices.
+                    </p>
+                    <a href="index.html" class="btn">View My Work</a>
+                    <a href="contact.html" class="btn">Contact Me</a>
+                </div>
+                <div class="about-image">
+                    <img src="img/profile.jpg" alt="Portrait of Sorin R">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with contact info and social links -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Sorin R | <a href="mailto:info@rotarusorin.com.com">info@rotarusorin.com</a></p>
+            <ul class="social-links">
+                <li><a href="https://github.com/sorin-r" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/sorin-r" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
